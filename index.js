@@ -1,14 +1,6 @@
 import chalk from 'chalk';
 import randomColor from 'randomcolor';
 
-// import uniqolor from 'uniqolor';
-
-// const hexColor = uniqolor.random().color;
-
-// const getColor = chalk.hex(uniqolor.random().color);
-
-// console.log(getColor(hexColor));
-
 const rColor = randomColor();
 
 const myBox = `###############################
@@ -20,8 +12,6 @@ const myBox = `###############################
 ###############################
 ###############################
 ###############################`;
-
-// console.log(getColor(myBox));
 
 randomColor({
   hue: process.argv[2],

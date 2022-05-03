@@ -7,5 +7,5 @@ $ node index.js
 ```
 
 - without any user input: print random color with hex code
-- with user input hue: print matching random color
-- with user input luminosity: print matching random color
+- with user input hue: print matching color
+- with user input hue and luminosity: print matching color
