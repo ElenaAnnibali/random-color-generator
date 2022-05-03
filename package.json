@@ -45,6 +45,7 @@
     "boxen": "^6.2.1",
     "boxen-cli": "^3.0.1",
     "chalk": "^5.0.1",
+    "cli-box": "^6.0.10",
     "colors": "^1.4.0",
     "console-log-it": "^1.1.0",
     "uniqolor": "^1.0.2"
