@@ -48,6 +48,7 @@
     "cli-box": "^6.0.10",
     "colors": "^1.4.0",
     "console-log-it": "^1.1.0",
+    "randomcolor": "^0.6.2",
     "uniqolor": "^1.0.2"
   }
 }

@@ -1,20 +1,42 @@
 import chalk from 'chalk';
-import uniqolor from 'uniqolor';
+import randomColor from 'randomcolor';
 
-const hexColor = uniqolor.random().color;
+// import uniqolor from 'uniqolor';
 
-const getColor = chalk.hex(uniqolor.random().color);
+// const hexColor = uniqolor.random().color;
+
+// const getColor = chalk.hex(uniqolor.random().color);
 
 // console.log(getColor(hexColor));
+
+const rColor = randomColor();
 
 const myBox = `###############################
 ###############################
 ###############################
 #####                     #####
-#####       ${hexColor}       #####
+#####       ${rColor}       #####
 #####                     #####
 ###############################
 ###############################
 ###############################`;
 
-console.log(getColor(myBox));
+// console.log(getColor(myBox));
+
+randomColor({
+  hue: process.argv[2],
+  luminosity: process.argv[3],
+});
+
+if (process.argv.length < 3) {
+  console.log(chalk.hex(rColor)(myBox));
+} else {
+  console.log(
+    chalk.hex(
+      randomColor({
+        hue: process.argv[2],
+        luminosity: process.argv[3],
+      }),
+    )(myBox),
+  );
+}
